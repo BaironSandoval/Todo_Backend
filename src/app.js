@@ -9,11 +9,11 @@ Todo;
 const PORT = process.env.PORT ?? 8000;
 
 db.authenticate()
-    .then(() => {console.log('Conexion correcta')})
+    .then(() => {console.log('Correct connection')})
     .catch(error => console.log(error))
 
 db.sync()
-    .then(() => console.log('Base de datos sincronizada'))
+    .then(() => console.log('Synchronized database'))
     .catch(error => console.log(error))
 
 const app = express();
